@@ -13,6 +13,8 @@ public class lcm_hcf {
                 num2 = scanner.nextInt();
                 scanner.close();
 
+                // using Euler GCD
+
                 temp1 = num1;
                 temp2 = num2;
 
