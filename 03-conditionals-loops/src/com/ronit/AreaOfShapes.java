@@ -13,7 +13,7 @@ public class  AreaOfShapes{
 
         System.out.println("The Area of the circle is "+Math.PI*rad*rad);
 
-        //Triangle
+        //Triangle & Isosceles Triangle
 
         System.out.print("Enter Base of Triangle: ");
         int base=sc.nextInt();
@@ -32,6 +32,33 @@ public class  AreaOfShapes{
         int breadth=sc.nextInt();
 
         System.out.println("Area of the Rectangle is: "+(length*breadth)+" Square Unit");
+        
+        //Parallelogram
+
+        System.out.print("Enter Base of Parallelogram: ");
+        int base1=sc.nextInt();
+
+        System.out.print("Enter Height of Parallelogram: ");
+        int height1=sc.nextInt();
+
+        System.out.println("Area of the Parallelogram is: "+base1*height1+" Square Unit");
+
+        //Rhombus
+
+        System.out.print("Enter first diagonal of rhombus: ");
+        int dia1=sc.nextInt();
+
+        System.out.print("Enter second diagonal of rhombus: ");
+        int dia2=sc.nextInt();
+
+        System.out.println("Area of the Rectangle is: "+(0.5*dia1*dia2)+" Square Unit");
+
+        //Equilateral Triangle
+
+        System.out.print("Enter side of Equilateral Triangle: ");
+        int side=sc.nextInt();
+
+        System.out.println("The Area of the Triangle is "+0.4330127018922*side*side);
 
 
     }
