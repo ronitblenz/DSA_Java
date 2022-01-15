@@ -3,11 +3,11 @@ package com.ronit;
 public class _441_ArrangingCoins {
     class Solution {
         public int arrangeCoins(int n) {
-            int left = 0;
-            int right = n;
+            long left = 0; // we use "long" because we may get an integer overflow
+            long right = n;
             while(left <= right){
-                int pivot = left + (right - left) / 2;
-                int coinsUsed = pivot * (pivot + 1)/2;
+                long pivot = left + (right - left) / 2;
+                long coinsUsed = pivot * (pivot + 1)/2;
                 if(coinsUsed == n){
                     return (int)pivot;
                 }
@@ -18,7 +18,7 @@ public class _441_ArrangingCoins {
                     left = pivot + 1;
                 }
             }
-            return right;
+            return (int)right; // cast as an "int" because it was initiliazed as a "long"
         }
     }
 }
